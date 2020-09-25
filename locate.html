@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="webp.css">
+	<h1>Location</h1>
+	<form method="POST">
+		<ul>
+			<li><a href="{{ url_for('addLoc') }}">ADD</a></li>
+			<li><a href="{{ url_for('viewLoc') }}">VIEW</a></li>
+			<li><a href="{{ url_for('editLoc') }}">EDIT</a></li>
+
+        </ul>
+        <a href="{{ url_for('home') }}">Return to HomePage</a></li>
+       </form>
+</body>
+</html>

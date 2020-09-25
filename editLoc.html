@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="/saveLoc" methods="POST">
+	Location ID
+		<input type="text" name="loc_id">
+		<br>
+		<input type="submit" name="submit">
+		 <br>
+	<a href="{{ url_for('prod') }}">Return to Products</a><br>
+	<a href="{{ url_for('home') }}">Return to HomePage</a>
+</form> 
+</body>
+</html>

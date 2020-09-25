@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HomePage</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/webp.css') }}">
+</head>
+<body>
+	
+<h1>Home page</h1>
+<ul >
+	<li><a href="{{ url_for('prod') }}">Products</a></li>
+	<li><a href="{{ url_for('locate') }}">Location</a></li>
+	<li><a href="{{ url_for('prodMove') }}">Products Movement</a></li>
+	<li><a href="{{ url_for('report') }}">Report</a></li>
+
+</body>
+</html>

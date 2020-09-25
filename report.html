@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Report</title>
+</head>
+<body>
+	<form>
+	<table border=2>
+		<th>From Location</th>
+		<th>To Location</th>  
+		<th>Product ID</th>   
+		<th>Quantity</th>  
+		{% for row in rows %}
+		<tr>
+			<td>{{ row["from_location"]}}</td>
+			<td>{{ row["to_location"]}}</td>
+			<td>{{ row["Prod_id"]}}</td>
+			<td>{{ row["Qty"]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</form>
+
+</body>
+</html>

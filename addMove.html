@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="/saveMove" methods="POST">
+		<pre>
+		Movement ID  :<input type="text" name="loc_id" required><br>
+		From Location:<input type="text" name="from_loc"><br>
+		To Location  :<input type="text" name="to_loc"><br>
+		Product ID   :<input type="text" name="p_id" required><br>
+		Quantity     :<input type="text" name="qty" required><br>
+		<input type="submit" name="submit" value="Submit">
+		 <br>
+	<a href="{{ url_for('prod') }}">Return to Products</a><br>
+	<a href="{{ url_for('home') }}">Return to HomePage</a>
+</form>
+</body>
+</html>

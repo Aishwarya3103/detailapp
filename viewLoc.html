@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+	<table border=2>
+		<th>Location ID</th>
+		{% for row in rows %}
+		<tr>
+			<td>{{ row["Location_id"]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	 <br>
+	<a href="{{ url_for('prod') }}">Return to Products</a><br>
+	<a href="{{ url_for('home') }}">Return to HomePage</a>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="/saveProd" methods="POST">
+	<table border=2>
+		<th>Product ID</th>
+		{% for row in rows %}
+		<tr>
+			<td>{{ row["Prod_id"]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<br>
+		<input type="submit" name="submit" value="Submit">
+		<br>
+		<a href="{{ url_for('prod') }}">Return to Products</a><br>
+	<a href="{{ url_for('home') }}">Return to HomePage</a>
+</form> 
+</body>
+</html>

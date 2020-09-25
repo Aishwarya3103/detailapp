@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/webp.css') }}">
+</head>
+<body>
+	<h1>Products</h1>
+	<form method="POST">
+		<ul>
+			<li><a href="{{ url_for('addProd') }}">ADD</a></li>
+			<li><a href="{{ url_for('viewProd') }}">VIEW</a></li>
+			<li><a href="{{ url_for('editProd') }}">EDIT</a></li>
+		</ul>
+		<a href="{{ url_for('home') }}">Return to HomePage</a></li>
+	</body>
+</html>
